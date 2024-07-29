@@ -1,0 +1,119 @@
+/* Overall container styling */
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2vw 10vw;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Centered heading */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Custom table styling */
+.table-custom {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-custom thead {
+  background-color: #343a40;
+}
+
+.table-custom tbody tr {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.table-custom tbody tr:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive table */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Custom status color classes */
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #000000;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 767.98px) {
+  .container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .table-custom {
+    border-radius: 5px;
+  }
+
+  .table-custom thead th {
+    font-size: 0.875rem; /* Slightly smaller font size for better fit */
+  }
+
+  .table-custom tbody td {
+    font-size: 0.75rem; /* Smaller font size for better fit on small screens */
+    padding: 0.5rem; /* Reduced padding for more space */
+  }
+
+  .table-custom thead th,
+  .table-custom tbody td {
+    padding: 0.75rem; /* Adjusted padding for better readability */
+  }
+
+  .table-custom tbody tr:hover {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  .title_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 1rem;
+  }
+}
+.title_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+.title_container img {
+  width: 60px;
+  height: 60px;
+}

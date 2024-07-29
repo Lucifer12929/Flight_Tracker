@@ -61,24 +61,8 @@ To run the application, ensure that the necessary API keys for Twilio and Nodema
    ```bash
    git clone https://github.com/your-repository/flight-tracker.git
 
-2. **Navigate to Project Directory**:
 
-  ```bash
-    cd flight-tracker
-
-3. **Install Dependencies**:
-
-   for frontend: 
-   ```bash
-   cd frontend
-   npm install
-
-  For the backend:
-```bash
-cd backend
-npm install
-
-4. **Configure Environment Variables**:
+2. **Configure Environment Variables**:
   - Create a .env file in the server directory.
   - Add the required API keys for Twilio and Nodemailer, following the format in the .env.example file.
 
